@@ -1,0 +1,36 @@
+.mycard_heard {
+  font-weight: bold;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+  font-size: large;
+}
+
+.mycard_body div {
+  width: 25%;
+  height: 6rem;
+  float: left;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.mycard_body div img {
+  border-radius: 5px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  width: 2.5rem;
+}
+
+.mycard_body div button {
+  border: 0;
+  opacity: 1;
+  height: 55%;
+
+}
+
+.mycard_body div p {
+  margin-top: 0px;
+  color: #666;
+  line-height: 120%;
+  text-align: center;
+  font-size: small;
+}

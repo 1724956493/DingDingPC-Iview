@@ -1,0 +1,220 @@
+[v-cloak] {
+	display: none;
+}  /*moon-autocomplete-input组件中包裹ul li 的容器*/
+
+.moon-autocomplete-ul-div {
+	z-index: 10;
+	border: 1px solid #D0D0D0;
+	background: white;
+	overflow: auto;
+	overflow-x: hidden;
+	position: absolute;
+	/*边框圆角*/
+	border-radius: 3px;
+}
+
+
+/*moon-autocomplete-input组件中ul元素*/
+
+.moon-autocomplete-ul-div ul {
+	/*去li前面的点*/
+	list-style-type: none;
+	/*li顶格*/
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	/*文字缩进*/
+	text-indent: 1em;
+}
+
+
+/*moon-autocomplete-input组件中li元素，下划线*/
+
+.moon-autocomplete-ul-div li {
+	/*高度在调用组件时设定*/
+	border-bottom: 1px solid #D0D0D0;
+	/**字母大写   capitalize首字母大写  uppercase大写 lowercase 小写*/
+	text-transform: uppercase;
+}
+
+
+/*moon-autocomplete-input组件中li元素 ,鼠标悬停变色*/
+
+.moon-autocomplete-ul-div li:hover {
+	background: #F3F3F3;
+}
+
+
+/*autocomplete-input组件最外盒子*/
+
+.moon-autocomplete-input {
+	height: 100%;
+}
+
+
+/*moon-autocomplete-input组件中input元素*/
+
+.moon-autocomplete-input>input {
+	/*去掉获取焦点时颜色*/
+	outline: none;
+	border: 0px solid #D0D0D0;
+	/*边框圆角*/
+	border-radius: 3px;
+	/*文字缩进*/
+	text-indent: 0em;
+	font-family: '宋体';
+	font-size: 18px;
+	height: 100%;
+}
+
+
+/*moon-autocomplete-input组件中li元素 用于键盘上下选择变色*/
+
+.moon-autocomplete-li {
+	background: #F3F3F3;
+}  .moon-dropdown {
+  	z-index: 10;
+  	border: 1px solid #D0D0D0;
+  	background: white;
+  	overflow: auto;
+  	overflow-x: hidden;
+  	position: fixed;
+  	/*边框圆角*/
+  	border-radius: 3px;
+  	width: 50%;
+  	top: 0px;
+  	right: 2px;
+  	height: auto;
+  }
+
+ .moon-icon {
+	/* 通过设置 font-size 来改变图标大小 */
+	font-size: 10px;
+	width: 1.5em;
+	height: 1.5em;
+	/* 图标和文字相邻时，垂直对齐 */
+	vertical-align: -0.15em;
+	/* 通过设置 color 来改变 SVG 的颜色/fill */
+	fill: currentColor;
+	/* path 和 stroke 溢出 viewBox 部分在 IE 下会显示
+             normalize.css 中也包含这行 */
+	overflow: hidden;
+} /**可以更改loading图片*/
+
+.moon-loading {
+	background: url(images/loading.gif);
+}
+/*显示所有被选图片*/
+
+.moon-upLoadImg_show {
+	position: relative;
+	float: left;
+	/**修改间尺*/
+	padding: 9px;
+}
+
+
+/*删除已选择的图片*/
+
+.moon-upLoadImg_show_deleteSelected {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 15px;
+	width: 15px;
+	z-index: 10;
+	/*可以自定义图片*/
+	background: url(images/del.png);
+	background-size: 100% 100%;
+}
+
+
+/*已选择的图片*/
+
+.moon-upLoadImg_show_selected {
+	/**默认背景*/
+	/*background-image: url(images/default.jpg);*/
+	width: 100px;
+	height: 100px;
+}	.moon-tree-node {
+		margin-top: 0px;
+	}
+
+	.moon-tree-cursor-style:hover {
+		cursor: pointer;
+	}
+
+	.moon-tree-node-font {
+		font-size: 10px;
+		font-family: "宋体";
+	}
+
+	.moon-tree-next-node {
+		padding-left: 18px;
+	}
+
+	.moon-tree-selected {
+		background: #d5e8fc;
+	}
+
+	.moon-tree-unselected {
+		background: auto;
+	}
+
+	.moon-tree-unselected:hover {
+		background: #eaf2fe;
+	}
+
+ /*上传图片总框架*/
+
+.moon-upLoadImg {
+	margin-top: 5px;
+}
+
+.moon-upLoadImg_ready {
+	position: relative;
+	width: 100%;
+}
+
+.moon-upLoadImg_ready_p {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: '宋体';
+	font-size: 18px;
+	color: black;
+}
+
+.moon-upLoadImg_ready_p:before {
+	content: "上传图片";
+}
+
+.moon-upLoadImg_ready_input {
+	width: 100%;
+	opacity: 0;
+}
+
+.moon-upLoadImg_ready_label {
+	position: absolute;
+	/*可以自定义图片*/
+	/*background: url(images/search.png);*/
+	height: 80%;
+	width: 20px;
+	top: 1px;
+	right: 9px;
+	background-size: 100% 100%;
+}
+/*分割线*/
+
+.moon-upLoadImg_line {
+	width: 100%;
+	height: 1px;
+}
+
+.moon-upLoadImg_line b {
+	background: #ddd;
+	width: 100%;
+	height: 1px;
+	vertical-align: top;
+	display: inline-block;
+}

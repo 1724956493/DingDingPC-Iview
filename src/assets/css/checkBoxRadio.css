@@ -1,0 +1,52 @@
+
+input[type=checkbox],
+input[type=radio] {
+  margin-top: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  outline: 0 !important;
+  background-color: transparent;
+  -webkit-appearance: none
+}
+
+input[type=checkbox][disabled]:before,
+input[type=radio][disabled]:before {
+  opacity: .3
+}
+
+input[type=checkbox]:before,
+input[type=radio]:before {
+  font-family: Muiicons;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  color: #aaa;
+  border-radius: 0;
+  background: 0 0;
+  -webkit-font-smoothing: antialiased
+}
+
+input[type=checkbox]:checked:before,
+input[type=radio]:checked:before {
+    color: #007aff
+}
+
+input[type=radio]:before {
+  content: '\e411'
+}
+
+
+input[type=radio]:checked:before {
+  content: '\e441'
+}
+
+input[type=checkbox]:before {
+  content: '\e411'
+}
+
+input[type=checkbox]:checked:before {
+  content: '\e442'
+}
